@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>我的收藏链接</title>
+</head>
+<body>
+<h1>链接列表</h1>
+<table>
+    <tr th:each="link : ${links}">
+        <td th:text="${link.name}">网站名</td>
+        <td><a th:href="${link.url}" th:text="${link.url}">网址</a></td>
+        <td th:text="${link.description}">描述</td>
+    </tr>
+</table>
+</body>
+</html>
