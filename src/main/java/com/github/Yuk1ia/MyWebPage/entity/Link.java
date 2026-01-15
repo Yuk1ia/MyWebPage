@@ -9,6 +9,18 @@ public class Link{
     private String name;
     private String url;
     private String description;
+    private String category;
+
+    public Link(long id, String name, String url) {
+        this.id = id;
+        this.name = name;
+        this.url = url;
+        this.category = category;
+        this.description = description;
+    }
+
+    public Link() {
+    }
 
     public long getId() {
         return id;
@@ -40,6 +52,14 @@ public class Link{
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 }
 
